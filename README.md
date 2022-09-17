@@ -3,7 +3,7 @@
 
 
 ## Features of this project:
-1. Web Automation for (web application: ) using Cucumber + Selenium and JAVA as main programming language.
+1. Web Automation for (web application) using Behaviour Driven Development style (Gherkins and JAVA) as main programming language.
 2. Data driven framework for testing multiple positive and negative scenarios
 3. Cucumber-reports for generating execution reports
 4. Page object model design pattern for storing DOM objects into different classes
