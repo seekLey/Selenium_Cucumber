@@ -1,11 +1,13 @@
 package stepDefinition;
 
+import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import pageObjects.PageObj;
 
@@ -27,7 +29,6 @@ public class LoginSteps {
     @Given("launch the browser")
     public void launch_the_browser() {
         System.out.println("########################   TEST STARTED   ##################################");
-
     }
 
     @Then("verify the page Title")
@@ -71,10 +72,21 @@ public class LoginSteps {
         po.enterTextArea(comment);
     }
 
+    @And("upload file")
+    public void select_file() {
+        WebElement e = driver.findElement(By.xpath("//*[@id=\"HTMLFormElements\"]/table/tbody/tr[4]/td/input[1]"));
+
+        e.sendKeys("/Users/sujit.ambore/Desktop/Sample1.png");
+        driver.findElement(By.xpath(".//*[@type='checkbox' and @value='cb1']")).click();
+
+    }
+
 //    @After()
 //    public void close_Browser() {
+//        System.out.println("########################   TEST ENDED   ##################################");
 //        driver.close();
 //        driver.quit();
 //    }
 }
+
 

@@ -12,6 +12,7 @@ Feature: Automation Demo Site
     And enter username <Username>
     And enter password <Password>
     And enter text area <TextArea>
+    And upload file
 
     Examples:
       | Username | Password    | TextArea   |

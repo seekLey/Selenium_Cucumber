@@ -27,7 +27,6 @@ public class PageObj {
     WebElement txtArea;
 
     public void enterUsername(String userName) {
-        txtUserName.click();
         txtUserName.clear();
         txtUserName.sendKeys(userName);
     }
