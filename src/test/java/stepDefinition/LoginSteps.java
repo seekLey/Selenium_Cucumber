@@ -81,12 +81,10 @@ public class LoginSteps {
 
     }
 
-//    @After()
-//    public void close_Browser() {
-//        System.out.println("########################   TEST ENDED   ##################################");
-//        driver.close();
-//        driver.quit();
-//    }
+    @After()
+    public void close_Browser() {
+        driver.close();
+        driver.quit();
+        System.out.println("########################   TEST ENDED   ##################################");
+    }
 }
-
-
