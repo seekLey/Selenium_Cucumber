@@ -76,9 +76,8 @@ public class LoginSteps {
     public void select_file() {
         WebElement e = driver.findElement(By.xpath("//*[@id=\"HTMLFormElements\"]/table/tbody/tr[4]/td/input[1]"));
 
-        e.sendKeys("/Users/sujit.ambore/Desktop/Sample1.png");
+        e.sendKeys("/Users/sujit.ambore/Desktop/sample1.png");
         driver.findElement(By.xpath(".//*[@type='checkbox' and @value='cb1']")).click();
-
     }
 
     @After()
