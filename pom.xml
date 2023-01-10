@@ -9,6 +9,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
@@ -54,8 +55,8 @@
         </dependency>
     </dependencies>
 
-
     <build>
+        <finalName>Selenium_Docker</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -86,6 +87,4 @@
             </plugin>
         </plugins>
     </build>
-
-
 </project>
